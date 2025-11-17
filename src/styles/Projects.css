@@ -123,18 +123,220 @@
   font-weight: 500;
 }
 
+/* Tablet and below (768px) */
 @media (max-width: 768px) {
+  .projects-section {
+    padding: 60px 15px;
+    min-height: auto;
+  }
+
   .projects-container {
     grid-template-columns: 1fr;
     gap: 25px;
+    padding-top: 30px;
   }
   
   .project-card {
     max-width: 100%;
   }
-  
-  .projects-section {
-    padding: 60px 15px;
+
+  .project-image-container {
+    height: 220px;
+  }
+
+  .project-content {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  .project-link {
+    width: 45px;
+    height: 45px;
   }
 }
 
+/* Small tablets and large phones (600px) */
+@media (max-width: 600px) {
+  .projects-section {
+    padding: 50px 12px;
+  }
+
+  .projects-container {
+    gap: 20px;
+    padding-top: 25px;
+  }
+
+  .project-image-container {
+    height: 200px;
+  }
+
+  .project-content {
+    padding: 18px;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+  }
+
+  .project-links {
+    gap: 15px;
+  }
+
+  .project-link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tech-tag {
+    padding: 5px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Large mobile devices (480px) */
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 40px 10px;
+  }
+
+  .projects-container {
+    gap: 18px;
+    padding-top: 20px;
+  }
+
+  .project-image-container {
+    height: 180px;
+  }
+
+  .project-content {
+    padding: 15px;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  .project-description {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  .project-links {
+    gap: 12px;
+  }
+
+  .project-link {
+    width: 38px;
+    height: 38px;
+  }
+
+  .project-technologies {
+    gap: 8px;
+  }
+
+  .tech-tag {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+  }
+}
+
+/* Small mobile devices (360px) */
+@media (max-width: 360px) {
+  .projects-section {
+    padding: 35px 8px;
+  }
+
+  .projects-container {
+    gap: 15px;
+    padding-top: 15px;
+  }
+
+  .project-image-container {
+    height: 160px;
+  }
+
+  .project-content {
+    padding: 12px;
+  }
+
+  .project-title {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+
+  .project-description {
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+  }
+
+  .project-links {
+    gap: 10px;
+  }
+
+  .project-link {
+    width: 35px;
+    height: 35px;
+  }
+
+  .project-technologies {
+    gap: 6px;
+  }
+
+  .tech-tag {
+    padding: 3px 8px;
+    font-size: 0.7rem;
+  }
+}
+
+/* Extra small devices (320px) */
+@media (max-width: 320px) {
+  .projects-section {
+    padding: 30px 6px;
+  }
+
+  .projects-container {
+    gap: 12px;
+    padding-top: 12px;
+  }
+
+  .project-image-container {
+    height: 150px;
+  }
+
+  .project-content {
+    padding: 10px;
+  }
+
+  .project-title {
+    font-size: 0.95rem;
+  }
+
+  .project-description {
+    font-size: 0.7rem;
+  }
+
+  .project-link {
+    width: 32px;
+    height: 32px;
+  }
+
+  .tech-tag {
+    padding: 3px 6px;
+    font-size: 0.65rem;
+  }
+}

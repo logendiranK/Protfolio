@@ -28,7 +28,7 @@
   flex-wrap: wrap;
 }
 
-/* LEFT TEXT */
+
 .about-text {
   flex: 1;
   text-align: left;
@@ -56,7 +56,7 @@
 
 .stat-card h3 {
   font-size: 1.8rem;
-  color: #7c3aed; /* purple highlight */
+  color: #7c3aed; 
 }
 
 .stat-card p {
@@ -64,7 +64,6 @@
   color: #c9c9c9;
 }
 
-/* RIGHT CARDS */
 .skills-grid {
   flex: 1;
   display: grid;
@@ -100,4 +99,281 @@
 .skill-card p {
   font-size: 0.9rem;
   color: #cfcfcf;
+}
+
+/* Tablet and below (768px) */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .stat-card {
+    padding: 0.8rem;
+  }
+
+  .stat-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .stat-card p {
+    font-size: 0.85rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .skill-card {
+    padding: 1.2rem;
+  }
+
+  .skill-card .icon {
+    font-size: 1.5rem;
+  }
+
+  .skill-card h4 {
+    font-size: 1rem;
+  }
+
+  .skill-card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Small tablets and large phones (600px) */
+@media (max-width: 600px) {
+  .about-section {
+    padding: 2rem 1.2rem;
+  }
+
+  .about-title {
+    font-size: 1.75rem;
+  }
+
+  .about-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-content {
+    gap: 1.2rem;
+  }
+
+  .stats {
+    gap: 0.7rem;
+    margin-top: 1.5rem;
+  }
+
+  .stat-card {
+    padding: 0.7rem;
+  }
+
+  .stat-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .stat-card p {
+    font-size: 0.8rem;
+  }
+
+  .skills-grid {
+    gap: 0.7rem;
+  }
+
+  .skill-card {
+    padding: 1rem;
+  }
+
+  .skill-card .icon {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .skill-card h4 {
+    font-size: 0.95rem;
+  }
+
+  .skill-card p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Large mobile devices (480px) */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+    margin-top: 1.2rem;
+  }
+
+  .stat-card {
+    padding: 0.6rem;
+  }
+
+  .stat-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .stat-card p {
+    font-size: 0.75rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .skill-card {
+    padding: 0.9rem;
+  }
+
+  .skill-card .icon {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .skill-card h4 {
+    font-size: 0.9rem;
+  }
+
+  .skill-card p {
+    font-size: 0.75rem;
+  }
+}
+
+/* Small mobile devices (360px) */
+@media (max-width: 360px) {
+  .about-section {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .about-title {
+    font-size: 1.3rem;
+  }
+
+  .about-subtitle {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-text p {
+    font-size: 0.85rem;
+  }
+
+  .stats {
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .stat-card {
+    padding: 0.5rem;
+  }
+
+  .stat-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .stat-card p {
+    font-size: 0.7rem;
+  }
+
+  .skills-grid {
+    gap: 0.5rem;
+  }
+
+  .skill-card {
+    padding: 0.8rem;
+  }
+
+  .skill-card .icon {
+    font-size: 1.1rem;
+  }
+
+  .skill-card h4 {
+    font-size: 0.85rem;
+  }
+
+  .skill-card p {
+    font-size: 0.7rem;
+  }
+}
+
+/* Extra small devices (320px) */
+@media (max-width: 320px) {
+  .about-section {
+    padding: 1rem 0.6rem;
+  }
+
+  .about-title {
+    font-size: 1.2rem;
+  }
+
+  .about-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .stat-card h3 {
+    font-size: 1rem;
+  }
+
+  .stat-card p {
+    font-size: 0.65rem;
+  }
+
+  .skill-card {
+    padding: 0.7rem;
+  }
+
+  .skill-card .icon {
+    font-size: 1rem;
+  }
+
+  .skill-card h4 {
+    font-size: 0.8rem;
+  }
+
+  .skill-card p {
+    font-size: 0.65rem;
+  }
 }
