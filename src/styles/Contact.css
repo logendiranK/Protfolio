@@ -3,8 +3,9 @@
   padding-bottom: 50px;
   padding-left: 20px;
   padding-right: 20px;
-  background: #1f2937; 
-  color: #fff;
+  background: #f8fafc;
+  color: #0f172a;
+  border-top: 1px solid #e2e8f0;
 }
 
 .contact-container {
@@ -26,12 +27,14 @@
 .contact-header h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: #0f172a;
 }
-.contact-header .highlight {
-  color: #60a5fa;
+.contact-header .highlight,
+.contact-info .highlight {
+  color: #0284c7;
 }
 .contact-header p {
-  color: #d1d5db;
+  color: #64748b;
 }
 
 .contact-grid {
@@ -387,27 +390,30 @@
 .contact-info h3 {
   font-size: 1.8rem;
   margin-bottom: 15px;
+  color: #0f172a;
 }
 .contact-info p {
-  color: #d1d5db;
+  color: #64748b;
   margin-bottom: 20px;
 }
 .info-card {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #111827;
+  background: #ffffff;
   padding: 12px;
   border-radius: 8px;
   margin-bottom: 15px;
-  border: 1px solid #374151;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
 }
 .info-card h4 {
   margin: 0;
   font-size: 1rem;
+  color: #0f172a;
 }
 .info-card p {
   margin: 0;
   font-size: 0.9rem;
-  color: #9ca3af;
+  color: #64748b;
 }

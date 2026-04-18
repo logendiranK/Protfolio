@@ -1,17 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Mail, Phone, MapPin, Send, MessageCircle, Calendar, Coffee } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import '../styles/Contact.css';
 
 function Contact () {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
   const [isVisible, setIsVisible] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState('');
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -27,25 +19,7 @@ function Contact () {
     return () => observer.disconnect();
   }, []);
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-
-      setTimeout(() => setSubmitStatus(''), 3000);
-    }, 2000);
-  };
 
   return (
     <section id="contact" className="contact-section" ref={sectionRef}>

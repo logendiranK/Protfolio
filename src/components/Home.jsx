@@ -1,89 +1,32 @@
-import React, { useEffect, useState } from 'react';
-import {Github, Linkedin,Code, Zap } from 'lucide-react';
-import '../styles/Home.css'; 
+import React from "react";
+import { Github, Linkedin, Mail } from "lucide-react";
+import "../styles/Home.css";
 
 function Home() {
-  const [text, setText] = useState('');
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [loopNum, setLoopNum] = useState(0);
-  const [typingSpeed, setTypingSpeed] = useState(150);
-
-  const roles = ['Full Stack Developer','Programmer'];
-
-  useEffect(() => {
-    const handleTyping = () => {
-      const i = loopNum % roles.length;
-      const fullText = roles[i];
-
-      setText(isDeleting 
-        ? fullText.substring(0, text.length - 1)
-        : fullText.substring(0, text.length + 1)
-      );
-
-      setTypingSpeed(isDeleting ? 30 : 150);
-
-      if (!isDeleting && text === fullText) {
-        setTimeout(() => setIsDeleting(true), 500);
-      } else if (isDeleting && text === '') {
-        setIsDeleting(false);
-        setLoopNum(loopNum + 1);
-      }
-    };
-
-    const timer = setTimeout(handleTyping, typingSpeed);
-    return () => clearTimeout(timer);
-  }, [text, isDeleting, loopNum, typingSpeed, roles]);
-
-
   return (
     <section id="home" className="hero-section">
-
-      <div className="hero-bg">
-        <div className="back-bg color1"></div>
-        <div className="back-bg color2"></div>
-        <div className="back-bg color3"></div>
+      <div className="hero-bg" aria-hidden>
+        <div className="hero-orb hero-orb--blue" />
+        <div className="hero-orb hero-orb--purple" />
+        <div className="hero-orb hero-orb--teal" />
       </div>
 
-      <div className="hero-content">
-        <div className="space-y-8">
-          {/* Floating icons */}
-          <div className="floating-icon left">
-            <Code className="w-12 h-12 text-blue-400/30" />
-          </div>
-          <div className="floating-icon right">
-            <Zap className="w-10 h-10 text-purple-400/30" />
-          </div>
+      <div className="hero-layout">
+        <div className="hero-content">
+          <h1 className="hero-title">
+            Hi, I&apos;m <span className="hero-title-accent">Logendiran K</span>
+          </h1>
+          <p className="hero-subtitle">Full Stack Developer | IoT Enthusiast</p>
+          <p className="hero-description">
+            I build responsive web applications with the MERN stack and enjoy connecting hardware
+            to the cloud—from dashboards and APIs to sensors and alerts. Final-year B.E. student,
+            focused on clean code and shipping work you can trust.
+          </p>
 
-          {/* Main heading */}
-          <div className="animate-fade-in-up">
-            <h1 className="hero-heading">
-              <span className="block">Hi, I'm </span>
-              <span className="holographic animate-text-glow">
-                 LOGENDIRAN K
-              </span>
-            </h1>
-          </div>
-          
-          {/* Typewriter */}
-          <div className="animate-fade-in-up animation-delay-500">
-            <div className="typewriter">
-              <span className="cursor">{text}</span>
-            </div>
-          </div>
-          
-          {/* Description */}
-          <div className="animate-slide-in-left animation-delay-1000">
-            <p className="hero-description">
-              I craft extraordinary digital experiences that push the boundaries of creativity and technology.
-              Transforming ideas into reality with cutting-edge solutions and innovative design.
-            </p>
-          </div>
-
-          {/* Buttons */}
-          <div className="hero-buttons animate-slide-in-right animation-delay-1500">
-            <button className="btn-primary" >
-              <span>Explore My Universe</span>
-            </button>
+          <div className="hero-actions">
+            <a href="#projects" className="btn-primary">
+              Explore My Work
+            </a>
             <a
               href="/resume.pdf"
               download="Logendiran_Resume.pdf"
@@ -91,38 +34,42 @@ function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span>Download Resume</span>
+              Download Resume
             </a>
           </div>
 
-          {/* Social icons */}
-          <div className="hero-social animate-fade-in-up animation-delay-2000">
-            {[
-              { icon: Github, href:'https://github.com/logendiranK',color: 'hover:text-gray-300' },
-              { icon: Linkedin, href: 'https://www.linkedin.com/in/logendiran-k/', color: 'hover:text-blue-400' },
-            ].map((social, index) => (
-              <a
-                key={index}
-                href={social.href}
-                className={`social-icon ${social.color}`}
-              >
-                <div className="social-glow"></div>
-                <social.icon size={32} className="relative z-10" />
-              </a>
-            ))}
+          <div className="hero-social" aria-label="Social links">
+            <a
+              href="https://github.com/logendiranK"
+              className="hero-social-link"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Github size={22} strokeWidth={2} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/logendiran-k/"
+              className="hero-social-link"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin size={22} strokeWidth={2} />
+            </a>
+            <a href="mailto:logendiran2005@gmail.com" className="hero-social-link" aria-label="Email">
+              <Mail size={22} strokeWidth={2} />
+            </a>
           </div>
         </div>
       </div>
 
-      <div className="scroll-indicator">
-        <div className="scroll-bounce">
-          <div className="scroll-mouse">
-            <div className="scroll-wheel"></div>
-          </div>
-        </div>
-      </div>
+      <a href="#about" className="hero-scroll" aria-label="Scroll to About">
+        <span className="hero-scroll-text">Scroll</span>
+        <span className="hero-scroll-line" aria-hidden />
+      </a>
     </section>
   );
-};
+}
 
 export default Home;

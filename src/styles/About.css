@@ -1,8 +1,9 @@
 .about-section {
   padding: 3rem 2rem;
-  background: #0b1120; 
-  color: #fff;
+  background: #ffffff;
+  color: #0f172a;
   text-align: center;
+  border-top: 1px solid #e2e8f0;
 }
 
 .about-title {
@@ -12,12 +13,12 @@
 }
 
 .about-title span {
-  color: #4db5ff;
+  color: #0284c7;
 }
 
 .about-subtitle {
   font-size: 1rem;
-  color: #cfcfcf;
+  color: #64748b;
   margin-bottom: 2rem;
 }
 
@@ -47,21 +48,22 @@
 }
 
 .stat-card {
-  border: 1px solid #2c2f3f;
+  border: 1px solid #e2e8f0;
   padding: 1rem;
   border-radius: 10px;
-  background: #111827;
+  background: #f8fafc;
   text-align: center;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
 }
 
 .stat-card h3 {
   font-size: 1.8rem;
-  color: #7c3aed; 
+  color: #7c3aed;
 }
 
 .stat-card p {
   font-size: 0.9rem;
-  color: #c9c9c9;
+  color: #64748b;
 }
 
 .skills-grid {
@@ -72,33 +74,35 @@
 }
 
 .skill-card {
-  background: #111827;
-  border: 1px solid #2c2f3f;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   padding: 1.5rem;
   border-radius: 12px;
   text-align: left;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
 }
 
 .skill-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
 }
 
 .skill-card .icon {
   font-size: 1.8rem;
   margin-bottom: 0.8rem;
-  color: #4db5ff;
+  color: #0284c7;
 }
 
 .skill-card h4 {
   margin-bottom: 0.3rem;
   font-size: 1.1rem;
-  color: #fff;
+  color: #0f172a;
 }
 
 .skill-card p {
   font-size: 0.9rem;
-  color: #cfcfcf;
+  color: #64748b;
 }
 
 /* Tablet and below (768px) */

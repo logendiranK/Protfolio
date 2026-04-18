@@ -16,10 +16,10 @@
 }
 
 .header.scrolled {
-  background: rgba(17, 24, 39, 0.95);
-  backdrop-filter: blur(6px);
-  -webkit-animation: alternate 3s infinite;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background: var(--header-scrolled, rgba(255, 255, 255, 0.92));
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(15, 23, 42, 0.08));
+  border-bottom: 1px solid var(--color-border, #e2e8f0);
 }
 
 .nav-container {
@@ -36,11 +36,10 @@
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  background: linear-gradient(to right, #60a5fa, #a78bfa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0f172a;
 }
 
 /* Desktop Navigation */
@@ -49,16 +48,16 @@
 }
 
 .nav-link {
-  color: #d1d5db;
-  margin-left: 2rem;
+  color: #64748b;
+  margin-left: 1.75rem;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .nav-link:hover {
-  color: #60a5fa;
+  color: #0284c7;
 }
 
 /* Mobile Button */
@@ -69,28 +68,30 @@
 .menu-btn button {
   background: none;
   border: none;
-  color: #d1d5db;
+  color: #334155;
   cursor: pointer;
   padding: 0.5rem;
 }
 
 .menu-btn button:hover {
-  color: #60a5fa;
+  color: #0284c7;
 }
 
 /* Mobile Menu */
 .mobile-menu {
   display: block;
-  background: rgba(17, 24, 39, 0.95);
-  backdrop-filter: blur(6px);
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
   padding: 0.5rem;
   margin-top: 0.5rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.1);
 }
 
 .mobile-link {
   display: block;
-  color: #d1d5db;
+  color: #334155;
   padding: 0.75rem;
   font-size: 1rem;
   font-weight: 500;
@@ -99,7 +100,7 @@
 }
 
 .mobile-link:hover {
-  color: #60a5fa;
+  color: #0284c7;
 }
 
 /* Responsive */

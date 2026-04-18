@@ -1,20 +1,29 @@
-import React from 'react';
-import { Github, ExternalLink } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { Github, ExternalLink, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { projectsData } from '../data/projectsData';
 import '../styles/Projects.css';
 
-function Projects() {
-  const visibleProjects = 3;
+function FullProjects() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <section id="projects" className="projects-section">
+    <section className="projects-section full-projects-page">
+      <div className="full-projects-toolbar">
+        <Link to="/" className="back-link">
+          <ArrowLeft size={20} aria-hidden />
+          Back to Home
+        </Link>
+      </div>
+
       <h2 className="section-title">
-        My <span className="highlight">Projects</span>
+        All <span className="highlight">Projects</span>
       </h2>      
       
       <div className="projects-container">
-        {projectsData.slice(0, visibleProjects).map((project) => (
+        {projectsData.map((project) => (
           <div key={project.id} className="project-card">
             <div className="project-image-container">
               <img 
@@ -63,14 +72,8 @@ function Projects() {
           </div>
         ))}
       </div>
-      
-      <div className="load-more-container">
-        <Link to="/projects" className="load-more-btn" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>
-          Load More
-        </Link>
-      </div>
     </section>
   );
 }
 
-export default Projects;
+export default FullProjects;

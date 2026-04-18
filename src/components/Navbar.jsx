@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "../styles/Navbar.css"; 
 
 function Header(){
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +17,21 @@ function Header(){
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Handle auto scrolling to hash links when navigating to the Home page from another page
+  useEffect(() => {
+    if (location.pathname === '/' && location.hash) {
+      setTimeout(() => {
+        const id = location.hash;
+        const element = document.querySelector(id);
+        if (element) {
+          const yOffset = -80; // Offset for navbar
+          const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, [location]);
+
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
@@ -22,11 +40,31 @@ function Header(){
     { name: "Contact", href: "#contact" },
   ];
 
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    setIsMenuOpen(false);
+    
+    if (location.pathname !== '/') {
+      // If we are not on the home page, navigate to home "/" with hash
+      navigate('/' + href);
+    } else {
+      // We are on home page, scroll directly
+      const element = document.querySelector(href);
+      if (element) {
+        const yOffset = -80; 
+        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    }
+  };
+
   return (
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <nav className="nav-container">
         <div className="nav-inner">
-          <div className="logo">Portfolio</div>
+          <div className="logo" onClick={(e) => handleNavClick(e, '#home')} style={{ cursor: "pointer" }}>
+            Logendiran K
+          </div>
 
           {/* Desktop Navigation */}
           <div className="nav-links">
@@ -35,12 +73,7 @@ function Header(){
                 key={item.name}
                 href={item.href}
                 className="nav-link"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.querySelector(item.href)?.scrollIntoView({
-                    behavior: "smooth",
-                  });
-                }}
+                onClick={(e) => handleNavClick(e, item.href)}
               >
                 {item.name}
               </a>
@@ -63,13 +96,7 @@ function Header(){
                 key={item.name}
                 href={item.href}
                 className="mobile-link"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setIsMenuOpen(false);
-                  document.querySelector(item.href)?.scrollIntoView({
-                    behavior: "smooth",
-                  });
-                }}
+                onClick={(e) => handleNavClick(e, item.href)}
               >
                 {item.name}
               </a>

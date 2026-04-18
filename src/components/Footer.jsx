@@ -9,21 +9,31 @@ const Footer = () => {
       <div className="footer-container">
         {/* Brand */}
         <div className="footer-brand">
-          <span className="footer-logo">Portfolio</span>
-          <p className="footer-tagline">
-            Building the future, one line of code at a time
-          </p>
+          <span className="footer-logo">Logendiran K</span>
+          <p className="footer-tagline">Full stack developer · IoT enthusiast</p>
         </div>
 
         {/* Social Links */}
         <div className="footer-socials">
-          <a href="#" className="social-link" aria-label="GitHub">
+          <a
+            href="https://github.com/logendiranK"
+            className="social-link"
+            aria-label="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Github size={24} />
           </a>
-          <a href="#" className="social-link" aria-label="LinkedIn">
+          <a
+            href="https://www.linkedin.com/in/logendiran-k/"
+            className="social-link"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Linkedin size={24} />
           </a>
-          <a href="" className="social-link" aria-label="Email">
+          <a href="mailto:logendiran2005@gmail.com" className="social-link" aria-label="Email">
             <Mail size={24} />
           </a>
         </div>
