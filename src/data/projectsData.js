@@ -3,7 +3,7 @@ export const projectsData = [
     id: 1,
     title: "AVLearn",
     description: "A gamified learning platform that makes education interactive through quizzes, progress tracking, and engaging game-based features.",
-    technologies: ["React", "Node.js", "MongoDB"],
+    technologies: ["React.js", "Node.js", "MongoDB"],
     githubUrl: "https://github.com/logendiranK/educative-game",
     liveUrl: "https://avlearns.vercel.app/",
     image: "https://via.placeholder.com/400x250?text=Project+2"
@@ -12,7 +12,7 @@ export const projectsData = [
     id: 2,
     title: "Grocery Mart",
     description: "A Grocery Mart website that allows you to view for products and add them to the cart.”",
-    technologies: ["React", "Node.js", "MongoDB"],
+    technologies: ["React.js", "Node.js", "MongoDB"],
     githubUrl: "https://github.com/logendiranK/Grocery-Mart-frontend",
     liveUrl: "https://grocery-mart-frontend.vercel.app/",
     image: "https://github.com/logendiranK/Gallery-Frontend/blob/main/assets/gallery.png?raw=true"
@@ -47,16 +47,16 @@ export const projectsData = [
     id: 6,
     title: "Shift-X",
     description: "Shift-X is a dynamic and responsive website for a shift-based work management system, designed to streamline scheduling and team coordination.",
-    technologies: ["React", "Node.js", "MongoDB"],
-    githubUrl: "https://github.com/logendiranK/SHIFT-X",
-    liveUrl: "https://shift-x-seven.vercel.app/",
+    technologies: ["React.js", "Node.js", "MongoDB"],
+    githubUrl: "https://github.com/logendiranK/Shift-X-frontend",
+    liveUrl: "https://shift-x-frontend.vercel.app/",
     image: "https://github.com/logendiranK/SHIFT-X/blob/main/assets/shift-x.png?raw=true"
   },
   {
     id: 7,
     title: "Chatbot",
     description: "A chatbot that can answer questions about the user needs.",
-    technologies: ["React", "Node.js", "MongoDB","Ollama"],
+    technologies: ["React.js", "Node.js", "MongoDB","Ollama"],
     githubUrl: "https://github.com/logendiranK/Chatbot-frontend",
     image: "https://github.com/logendiranK/SHIFT-X/blob/main/assets/shift-x.png?raw=true"
   },    
@@ -64,7 +64,7 @@ export const projectsData = [
     id: 8,
     title: "Gallery",
     description: "A Gallery website that allows you to view for images.",
-    technologies: ["React", "Node.js", "MongoDB"],
+    technologies: ["React.js", "Node.js", "MongoDB"],
     githubUrl: "https://github.com/logendiranK/Gallery-Frontend",
     image: "https://github.com/logendiranK/Gallery-Frontend/blob/main/assets/gallery.png?raw=true"
   },  
