@@ -16,14 +16,22 @@ export const skillCategories = [
   },
   {
     sectionId: "skills-backend",
-    title: "Backend & Databases",
+    title: "Backend",
     cardClass: "green",
     skills: [
       { name: "Node.js", iconSlug: "nodedotjs", iconColor: "339933" },
       { name: "Express.js", iconSlug: "express", iconColor: "000000" },
+      { name: "FastAPI", iconSlug: "fastapi", iconColor: "009688" },
+      { name: "REST APIs", iconSlug: "swagger", iconColor: "85EA2D" },
+    ],
+  },
+  {
+    sectionId: "skills-database",
+    title: "Databases",
+    cardClass: "",
+    skills: [
       { name: "MongoDB", iconSlug: "mongodb", iconColor: "47A248" },
       { name: "SQL", iconSlug: "mysql", iconColor: "4479A1" },
-      { name: "REST APIs", iconSlug: "swagger", iconColor: "85EA2D" },
     ],
   },
   {
