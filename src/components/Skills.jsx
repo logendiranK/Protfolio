@@ -7,15 +7,22 @@ function iconSrc(slug, hex) {
 }
 
 function Skills() {
-  const [brokenIcons, setBrokenIcons] = useState(() => ({}));
+  const [brokenIcons, setBrokenIcons] = useState({});
 
   const markIconBroken = (key) => {
-    setBrokenIcons((prev) => ({ ...prev, [key]: true }));
+    setBrokenIcons((prev) => {
+      if (prev[key]) return prev;
+      return { ...prev, [key]: true };
+    });
   };
 
   return (
     <div className="skills-page">
-      <section id="skills" className="skills-intro" aria-labelledby="skills-page-title">
+      <section
+        id="skills"
+        className="skills-intro"
+        aria-labelledby="skills-page-title"
+      >
         <h2 id="skills-page-title" className="skills-page-title">
           {skillsSectionCopy.title}
         </h2>
@@ -27,33 +34,56 @@ function Skills() {
             <article
               key={category.sectionId}
               id={category.sectionId}
-              className={`skill-card${category.cardClass === "green" ? " skill-card--accent" : ""}`}
+              className={`skill-card${
+                category.cardClass === "green"
+                  ? " skill-card--accent"
+                  : ""
+              }`}
             >
-              <h3 className="skill-card-title">{category.title}</h3>
+              <h3 className="skill-card-title">
+                {category.title}
+              </h3>
 
-              <ul className="skill-name-grid">
+              <ul className="skill-name-grid" role="list">
                 {category.skills.map((skill) => {
                   const rowKey = `${catIndex}-${skill.name}`;
                   const iconBroken = brokenIcons[rowKey];
 
                   return (
-                    <li key={skill.name} className="skill-name-item">
+                    <li
+                      key={rowKey}
+                      className="skill-name-item"
+                    >
                       <div className="skill-name-chip">
-                        <span className="skill-name-icon" aria-hidden>
+                        <span
+                          className="skill-name-icon"
+                          aria-hidden="true"
+                        >
                           {!iconBroken ? (
                             <img
-                              src={iconSrc(skill.iconSlug, skill.iconColor)}
-                              alt=""
+                              src={iconSrc(
+                                skill.iconSlug,
+                                skill.iconColor
+                              )}
+                              alt={`${skill.name} icon`}
                               width={22}
                               height={22}
                               loading="lazy"
-                              onError={() => markIconBroken(rowKey)}
+                              decoding="async"
+                              onError={() =>
+                                markIconBroken(rowKey)
+                              }
                             />
                           ) : (
-                            <span className="skill-name-fallback">{skill.name.slice(0, 1)}</span>
+                            <span className="skill-name-fallback">
+                              {skill.name.slice(0, 1)}
+                            </span>
                           )}
                         </span>
-                        <span className="skill-name-text">{skill.name}</span>
+
+                        <span className="skill-name-text">
+                          {skill.name}
+                        </span>
                       </div>
                     </li>
                   );

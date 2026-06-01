@@ -2,88 +2,139 @@ export const projectsData = [
   {
     id: 1,
     title: "AVLearn",
-    description: "A gamified learning platform that makes education interactive through quizzes, progress tracking, and engaging game-based features.",
-    technologies: ["React.js", "Node.js", "MongoDB"],
+    description:
+      "A gamified e-learning platform that delivers interactive educational experiences through quizzes, progress tracking, authentication, responsive UI, and game-based learning features. Built with full-stack web development technologies to enhance student engagement and learning management.",
+    technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "REST API"],
     githubUrl: "https://github.com/logendiranK/educative-game",
     liveUrl: "https://avlearns.vercel.app/",
     image: "https://via.placeholder.com/400x250?text=Project+2"
   },
+
   {
     id: 2,
     title: "Grocery Mart",
-    description: "A Grocery Mart website that allows you to view for products and add them to the cart.”",
-    technologies: ["React.js", "Node.js", "MongoDB"],
+    description:
+      "A full-stack e-commerce grocery shopping platform that enables users to browse products, manage shopping carts, and experience responsive online shopping functionality with dynamic product management and modern UI design.",
+    technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "REST API"],
     githubUrl: "https://github.com/logendiranK/Grocery-Mart-frontend",
     liveUrl: "https://grocery-mart-frontend.vercel.app/",
-    image: "https://github.com/logendiranK/Gallery-Frontend/blob/main/assets/gallery.png?raw=true"
+    image:
+      "https://github.com/logendiranK/Gallery-Frontend/blob/main/assets/gallery.png?raw=true"
   },
+
   {
     id: 3,
     title: "Cloud-burst Early Warning And Alarm System",
-    description: "A comprehensive early warning and alarm system designed to detect and alert users about potential cloudburst events, ensuring timely evacuation and safety measures.",
-    technologies: ["IOT","Python"],
-    githubUrl: "https://github.com/logendiranK/Cloudburst-Early-Warning-System",
-    image: "https://github.com/logendiranK/Cloudburst-Early-Warning-System/blob/main/assets/cloud-burst.png?raw=true"
+    description:
+      "An IoT-based disaster management and early warning system designed to detect cloudburst conditions using sensors, real-time monitoring, and automated alert mechanisms to improve safety, evacuation planning, and emergency response.",
+    technologies: ["IoT", "Python", "Embedded Systems", "Sensors"],
+    githubUrl:
+      "https://github.com/logendiranK/Cloudburst-Early-Warning-System",
+    image:
+      "https://github.com/logendiranK/Cloudburst-Early-Warning-System/blob/main/assets/cloud-burst.png?raw=true"
   },
+
   {
     id: 4,
     title: "Melody Keys",
-    description: "A Website for a melody keyboard that allows you to play melodies by clicking on the keys.”",
-    technologies: ["JavaScript", "HTML", "CSS"],
+    description:
+      "An interactive virtual piano and melody keyboard application that enables users to play musical notes through keyboard interactions, audio integration, and responsive frontend design using JavaScript.",
+    technologies: ["JavaScript", "HTML", "CSS", "DOM Manipulation"],
     githubUrl: "https://github.com/logendiranK/Melody-Keys",
     liveUrl: "https://melodykeys.netlify.app/",
-    image: "https://github.com/logendiranK/Melody-Keys/blob/main/assets/melody-keys.png?raw=true"
+    image:
+      "https://github.com/logendiranK/Melody-Keys/blob/main/assets/melody-keys.png?raw=true"
   },
+
   {
     id: 5,
     title: "Flappy Bird",
-    description: "A simple implementation of the Flappy Bird game using HTML, CSS, and JavaScript.”",
-    technologies: ["Unity", "C#"],
+    description:
+      "A 2D game development project inspired by Flappy Bird, featuring collision detection, player controls, game physics, animations, and score tracking using Unity and C#.",
+    technologies: ["Unity", "C#", "Game Development", "Physics Engine"],
     githubUrl: "https://github.com/logendiranK/Flappy-Bird",
     liveUrl: "https://flappy-bird-pi-sable.vercel.app/",
-    image: "https://github.com/logendiranK/Flappy-Bird/blob/main/assets/flappy-bird.png?raw=true"
+    image:
+      "https://github.com/logendiranK/Flappy-Bird/blob/main/assets/flappy-bird.png?raw=true"
   },
+
   {
     id: 6,
     title: "Shift-X",
-    description: "Shift-X is a dynamic and responsive website for a shift-based work management system, designed to streamline scheduling and team coordination.",
-    technologies: ["React.js", "Node.js", "MongoDB"],
+    description:
+      "A full-stack shift-based hiring and workforce management platform that connects employers with part-time workers for urgent job opportunities. Features include real-time job posting, authentication, responsive dashboards, job management, and shift scheduling.",
+    technologies: [
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "Express.js",
+      "REST API",
+      "Authentication"
+    ],
     githubUrl: "https://github.com/logendiranK/Shift-X-frontend",
     liveUrl: "https://shift-x-frontend.vercel.app/",
-    image: "https://github.com/logendiranK/SHIFT-X/blob/main/assets/shift-x.png?raw=true"
+    image:
+      "https://github.com/logendiranK/SHIFT-X/blob/main/assets/shift-x.png?raw=true"
   },
+
   {
     id: 7,
     title: "Chatbot",
-    description: "A chatbot that can answer questions about the user needs.",
-    technologies: ["React.js", "Node.js", "MongoDB","Ollama"],
+    description:
+      "An AI-powered chatbot application capable of answering user queries using conversational AI, natural language processing, and local LLM integration with Ollama for intelligent user interaction.",
+    technologies: [
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "Ollama",
+      "AI Chatbot",
+      "NLP"
+    ],
     githubUrl: "https://github.com/logendiranK/Chatbot-frontend",
-    image: "https://github.com/logendiranK/SHIFT-X/blob/main/assets/shift-x.png?raw=true"
-  },    
+    image:
+      "https://github.com/logendiranK/SHIFT-X/blob/main/assets/shift-x.png?raw=true"
+  },
+
   {
     id: 8,
     title: "Gallery",
-    description: "A Gallery website that allows you to view for images.",
-    technologies: ["React.js", "Node.js", "MongoDB"],
+    description:
+      "A responsive image gallery web application that allows users to browse and manage image collections with modern frontend design and dynamic rendering functionality.",
+    technologies: ["React.js", "Node.js", "MongoDB", "Responsive Design"],
     githubUrl: "https://github.com/logendiranK/Gallery-Frontend",
-    image: "https://github.com/logendiranK/Gallery-Frontend/blob/main/assets/gallery.png?raw=true"
-  },  
+    image:
+      "https://github.com/logendiranK/Gallery-Frontend/blob/main/assets/gallery.png?raw=true"
+  },
+
   {
     id: 9,
     title: "Rubiks Cubes",
-    description: "An interactive 3D Rubik’s Cube built using Three.js with smooth animations and user-controlled rotations.",
-    technologies: ["Three.js", "JavaScript", "HTML", "CSS"],
+    description:
+      "An interactive 3D Rubik’s Cube simulation built using Three.js featuring real-time rendering, smooth animations, 3D transformations, and user-controlled rotations for immersive visualization.",
+    technologies: [
+      "Three.js",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "3D Graphics",
+      "WebGL"
+    ],
     githubUrl: "https://github.com/logendiranK/threejs-rubiks-cube",
     liveUrl: "https://cubes-0805.netlify.app/",
-    image: "https://github.com/logendiranK/threejs-rubiks-cube/blob/main/assets/rubiks-cube.png?raw=true"
+    image:
+      "https://github.com/logendiranK/threejs-rubiks-cube/blob/main/assets/rubiks-cube.png?raw=true"
   },
+
   {
     id: 10,
     title: "Temperature Converter",
-    description: "A simple and responsive temperature converter that instantly converts values between Celsius and Fahrenheit.”",
-    technologies: ["JavaScript", "HTML", "CSS"],
-    githubUrl: "https://github.com/logendiranK/intern-task-3-temperature-conveter",
+    description:
+      "A responsive frontend utility application that instantly converts temperature values between Celsius and Fahrenheit using JavaScript-based calculations and real-time user input handling.",
+    technologies: ["JavaScript", "HTML", "CSS", "Responsive UI"],
+    githubUrl:
+      "https://github.com/logendiranK/intern-task-3-temperature-conveter",
     liveUrl: "https://playful-palmier-d61319.netlify.app/",
-    image: "https://github.com/logendiranK/intern-task-3-temperature-conveter/blob/main/assets/temperature-converter.png?raw=true"
-  },
+    image:
+      "https://github.com/logendiranK/intern-task-3-temperature-conveter/blob/main/assets/temperature-converter.png?raw=true"
+  }
 ];
