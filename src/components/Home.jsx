@@ -28,7 +28,7 @@ function Home() {
               Explore My Work
             </a>
             <a
-              href="/resume.pdf"
+              href="/Logendiran_K_Resume.pdf"
               download="Logendiran_Resume.pdf"
               className="btn-outline"
               target="_blank"
