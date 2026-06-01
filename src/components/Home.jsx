@@ -18,18 +18,20 @@ function Home() {
           </h1>
           <p className="hero-subtitle">Full Stack Developer | IoT Enthusiast</p>
           <p className="hero-description">
-            I build responsive web applications with the MERN stack and enjoy connecting hardware
-            to the cloud—from dashboards and APIs to sensors and alerts. Final-year B.E. student,
-            focused on clean code and shipping work you can trust.
+            I build responsive web applications with the MERN stack and enjoy
+            connecting hardware to the cloud—from dashboards and APIs to sensors
+            and alerts. Final-year B.E. student, focused on clean code and
+            shipping work you can trust.
           </p>
 
           <div className="hero-actions">
             <a href="#projects" className="btn-primary">
               Explore My Work
             </a>
+
             <a
-              href="/Logendiran_K_Resume.pdf"
-              download="Logendiran_Resume.pdf"
+              href="./LogendiranK_Resume.pdf"
+              download="LogendiranK_Resume.pdf"
               className="btn-outline"
               target="_blank"
               rel="noopener noreferrer"
@@ -57,7 +59,11 @@ function Home() {
             >
               <Linkedin size={22} strokeWidth={2} />
             </a>
-            <a href="mailto:logendiran2005@gmail.com" className="hero-social-link" aria-label="Email">
+            <a
+              href="mailto:logendiran2005@gmail.com"
+              className="hero-social-link"
+              aria-label="Email"
+            >
               <Mail size={22} strokeWidth={2} />
             </a>
           </div>
