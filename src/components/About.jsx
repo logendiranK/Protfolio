@@ -2,33 +2,36 @@ import React from "react";
 import "../styles/About.css";
 import { Laptop, Layout, Server, Zap, Brain, Users } from "lucide-react";
 
-function About () {
+function About() {
   return (
     <section id="about" className="about-section">
       <h2 className="about-title">
         About <span>Me</span>
       </h2>
       <p className="about-subtitle">
-        Final-year engineering student & aspiring full-stack developer (MERN).
-        I love building clean, fast and user-friendly web apps.
+        B.E. graduate & aspiring full-stack developer (MERN). I love building
+        clean, fast, and user-friendly web applications.
       </p>
 
       <div className="about-content">
-
         <div className="about-text">
           <p>
-            I'm a final-year undergraduate passionate about turning ideas into
-            useful web applications. My focus is full-stack development with
-            React, Node.js/Express, MongoDB, JavaScript, THREE JS, HTML and CSS.
+            I'm a B.E. graduate passionate about turning ideas into useful web
+            applications. My focus is full-stack development with React,
+            Node.js/Express, MongoDB, JavaScript, Three.js, HTML, and CSS.
           </p>
+
           <p>
-            On campus, I've built end-to-end projects—from small tools to full
-            products—practicing clean code, version control and deployment. I
-            enjoy hackathons, collaborating with peers, and learning in public.
+            I've built end-to-end projects—from small tools to full products—
+            practicing clean code, version control, and deployment. I enjoy
+            hackathons, collaborating with peers, and continuously learning new
+            technologies.
           </p>
+
           <p>
-            I'm actively looking for internship/entry-level opportunities where
-            I can contribute, learn from strong teams, and ship real features.
+            I'm actively looking for entry-level opportunities where I can
+            contribute, learn from strong teams, and build impactful real-world
+            applications.
           </p>
 
           <div className="stats">
@@ -50,7 +53,6 @@ function About () {
             </div>
           </div>
         </div>
-
 
         <div className="skills-grid">
           <div className="skill-card">
@@ -87,6 +89,6 @@ function About () {
       </div>
     </section>
   );
-};
+}
 
 export default About;

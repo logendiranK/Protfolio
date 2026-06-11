@@ -18,10 +18,7 @@ function Home() {
           </h1>
           <p className="hero-subtitle">Full Stack Developer | IoT Enthusiast</p>
           <p className="hero-description">
-            I build responsive web applications with the MERN stack and enjoy
-            connecting hardware to the cloud—from dashboards and APIs to sensors
-            and alerts. Final-year B.E. student, focused on clean code and
-            shipping work you can trust.
+            I build responsive web applications with the MERN stack and enjoy connecting hardware to the cloud—from dashboards and APIs to sensors and alerts. B.E. graduate focused on clean code, scalable solutions, and shipping reliable products you can trust.
           </p>
 
           <div className="hero-actions">

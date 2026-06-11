@@ -7,7 +7,7 @@ export const projectsData = [
     technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "REST API"],
     githubUrl: "https://github.com/logendiranK/educative-game",
     liveUrl: "https://avlearns.vercel.app/",
-    image: "https://via.placeholder.com/400x250?text=Project+2"
+    image: "../../public/photos/Screenshot 2026-06-11 113222.png"
   },
 
   {
@@ -19,7 +19,7 @@ export const projectsData = [
     githubUrl: "https://github.com/logendiranK/Grocery-Mart-frontend",
     liveUrl: "https://grocery-mart-frontend.vercel.app/",
     image:
-      "https://github.com/logendiranK/Gallery-Frontend/blob/main/assets/gallery.png?raw=true"
+      "../../public/photos/Screenshot 2026-06-11 113238.png"
   },
 
   {
@@ -43,7 +43,7 @@ export const projectsData = [
     githubUrl: "https://github.com/logendiranK/Melody-Keys",
     liveUrl: "https://melodykeys.netlify.app/",
     image:
-      "https://github.com/logendiranK/Melody-Keys/blob/main/assets/melody-keys.png?raw=true"
+      "../../public/photos/Screenshot 2026-06-11 113300.png"
   },
 
   {
@@ -55,7 +55,7 @@ export const projectsData = [
     githubUrl: "https://github.com/logendiranK/Flappy-Bird",
     liveUrl: "https://flappy-bird-pi-sable.vercel.app/",
     image:
-      "https://github.com/logendiranK/Flappy-Bird/blob/main/assets/flappy-bird.png?raw=true"
+      "../../public/photos/ChatGPT Image Jun 11, 2026, 11_44_05 AM.png"
   },
 
   {
@@ -135,6 +135,6 @@ export const projectsData = [
       "https://github.com/logendiranK/intern-task-3-temperature-conveter",
     liveUrl: "https://playful-palmier-d61319.netlify.app/",
     image:
-      "https://github.com/logendiranK/intern-task-3-temperature-conveter/blob/main/assets/temperature-converter.png?raw=true"
+      "../../public/photos/Screenshot 2026-06-11 113345.png"
   }
 ];
